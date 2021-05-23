@@ -1,0 +1,118 @@
+
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+html {
+    background-color: skyblue;
+  }
+   
+body {
+    font-family: Verdana;
+    font-size: 1rem;
+}
+  
+  h1 {
+      font-family: Verdana;
+      font-size: 60px;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+      color: dodgerblue;  /* Fuchsia */
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+
+  .messageWithLink {
+    font-family: Verdana;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  h2 {
+      font-family: Verdana;
+      font-size: larger;
+      text-align: left;
+      color: white;
+      
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    align: center;
+  }
+  
+  p {
+    color: red;
+  }
+  
+  table {
+      border: 1px solid black;
+      background-color: #f1f1c1;
+  }
+
+  .survey {
+    background-color: cadetblue;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  /* Defining styling for a specific element type - each question */
+  .question {
+    background-color: cadetblue;
+    color: white;
+    font-family: Verdana;
+    font-size: larger;
+    margin: 20px;
+    padding: 0;
+  }
+
+  input[type = checkbox] {
+    height: 20px;
+    width: 20px;
+  }
+
+  .name {
+    font-family: Verdana;
+    font-size: inherit;
+    width: 100%;
+    height: 2.0rem
+  }
+
+  #favorite {
+    font-family: Verdana;
+    font-size: inherit;
+    color: gray;
+    width: 25%;
+    height: 2.0rem
+  }
+
+  /* Defining styling for a specific element type - large block buttons */
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: dodgerblue;
+    color:white;  /* yellow */
+    padding: 14px 28px;
+    font-family: Verdana;
+    font-size: larger;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  #comments {
+    width: 100%;
+    font-family: Verdana;
+    font-size: medium;
+  
+  }
+  
+  /* Defining styling for a specific element with an id */
+  #signature {
+    text-align: right;
+    color: dodgerblue;
+    font-family: Verdana;
+  }

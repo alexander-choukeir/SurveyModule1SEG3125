@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <! IMPORTANT to use a CSS file - external>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Survey</title>
+</head>
+
+<body>
+  <h1>User interface survey</h1>
+  <form id="myform" action="index.php">
+    <br>
+    <br>
+    <! Choose a website to evaluate>
+      <h2 class="messageWithLink">Please fill out this survey to let us know what you think of the UI of the <a
+          href="https://www.twitch.tv/directory">Twitch</a> website.</h2>
+      <br>
+      <br>
+      <! You should make your image clickable>
+        <a href="https://www.twitch.tv/directory">
+          <img alt="https://www.twitch.tv/directory" src="TwitchScreenShot.png" width="1000" height="500">
+        </a>
+        <br>
+        <br>
+
+        <div class="survey">
+          <div class="question">
+            <h2> Name </h2>
+            <p><input class="name" type="text" name="firstname" placeholder="Enter your name"></p>
+
+          </div>
+
+          <div class="question">
+            <h2>On a scale of 1 to 10, how would you rate the UI of the website?</h2>
+            <select id="favorite">
+              <option value="" selected="selected"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <h2> What UI goals does this site satisfy? </h2>
+            <input type="checkbox" name="Features" value="Proper functionality">Proper functionality<br>
+            <input type="checkbox" name="Features" value="Consistency">Consistency<br>
+            <input type="checkbox" name="Features" value="Efficiency">Efficiency<br>
+            <input type="checkbox" name="Features" value="Usability">Usability<br>
+            <input type="checkbox" name="Features" value="Reliability">Reliability<br>
+            <input type="checkbox" name="Features" value="Security and Data integrity">Security and Data integrity<br>
+
+          </div>
+
+          <div class="question">
+            <h2>Were there any problems with the UI when visiting the website?</h2>
+            <input type="radio" name="YesOrNoRadio" value="Yes"> Yes <br>
+            <input type="radio" name="YesOrNoRadio" value="No"> No
+
+          </div>
+
+          <div class="question">
+            <h2> If yes, what were these problems/bugs? </h2>
+            <p><input class="name" type="text" name="Problems" placeholder="Enter the problems"></p>
+
+          </div>
+
+          <div class="question">
+            <h2>How satisfied are you with the UI of the website?</h2>
+            <select id="favorite">
+              <option value="" selected="selected"></option>
+              <option value="Satisfaction">Very satisfied</option>
+              <option value="Satisfaction">Satisfied</option>
+              <option value="Satisfaction">Dissatisfied</option>
+              <option value="Satisfaction">Very dissatisfied</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <h2>Does the UI of the website keep you intrigued enough to continue browsing?</h2>
+            <input type="radio" name="YesOrNoRadio" value="Yes"> Yes <br>
+            <input type="radio" name="YesOrNoRadio" value="No"> No
+
+          </div>
+
+          <div class="question">
+            <h2>Comments:</h2>
+            <textarea id="comments" rows="5" cols="30"></textarea>
+          </div>
+
+          <br>
+          <br>
+
+          <button id="submitButton" type="button" class="block">
+            Submit survey
+          </button>
+        </div>
+        <p id="signature">Website designed by AC</p>
+
+  </form>
+</body>
+
+</html>
