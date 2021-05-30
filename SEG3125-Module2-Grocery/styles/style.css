@@ -1,0 +1,101 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #20B2AA;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #5ec8c2;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #8ED8D4;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #FFDEDB;
+  border-top: none;
+}
+
+html {
+  background-color: #C7ECEA
+  ;
+  height: 100%;
+}
+
+body {
+  font-family: Verdana;
+  height: 90%;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Verdana;
+  text-align: center;
+  color: #20B2AA
+  ;
+}
+
+.tablinks {
+  font-size: large;
+  font-family: Verdana;
+  color: black;
+  font-weight: bold;
+
+}
+
+h3 {
+  font-size: x-large;
+  font-family: Verdana;
+}
+
+#dietSelect {
+  font-family: Verdana;
+  width: 20%;
+  font-size: inherit;
+}
+
+option {
+  font-family: Verdana;
+  font-size: larger;
+}
+
+input[type = checkbox] {
+  height: 20px;
+  width: 20px;
+}
+
+#addCart {
+  font-size: large;
+  font-weight: bold;
+  background-color: #20B2AA;
+}
+
+#signature {
+  color: #20B2AA;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.page {
+  height: 82%;
+}
