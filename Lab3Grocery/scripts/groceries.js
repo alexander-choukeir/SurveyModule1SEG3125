@@ -17,7 +17,7 @@ var products = [
 		lactoseIntolerant: true,
 		nutFree: true,
 		organic: false,
-		healthy: false,
+		healthy: true,
 		weightLoss: false,
 		price: 2.35
 	},
@@ -90,7 +90,7 @@ var products = [
 		nutFree: true,
 		organic: true,
 		healthy: true,
-		weightLoss: true,
+		weightLoss: false,
 		price: 3.00
 	}
 ];
