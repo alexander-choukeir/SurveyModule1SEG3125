@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>Fresh Foods</title>
+</head>
+
+<body>
+  
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class = "page">
+<div class="tab">
+  <button id ="CompanyLogo" class="tablinks">Fresh Foods</button>
+  <button class="tablinks" id="tabs" onclick="openInfo(event, 'Cart')">Step 3 <br> Cart</button>
+  <button class="tablinks" id="tabs" onclick="openInfo(event, 'Products')">Step 2 <br> Products</button>
+  <button class="tablinks" id="tabs" onclick="openInfo(event, 'Client')">Step 1 <br> Client</button>
+  <button class="tablinks" id="home" onclick="openInfo(event, 'Home')">Home</button>
+  
+  
+  
+</div>
+
+<!-- Tab content -->
+
+<div id="Home" class = "tabcontent">
+  <br>
+  <br>
+  <div class ="Box">
+    <h1>Welcome to Fresh Foods Grocery!</h1>
+    <br>
+    <br>
+    <h2>We will find products based on the filters you choose!</h2>
+    <br>
+    <br>
+    <h2>Click the button below to get started!</h2>
+    <br>
+    <br>
+    <button id="GetStarted" onclick="openInfo(event, 'Client')">Get started</button>
+    <br><br>
+  </div>
+  
+</div>
+<div id="Client" class="tabcontent">
+  <br>
+  <br>
+  <div class ="Box"> 
+    <h1>Step 1</h1>
+    <h3>Your information</h3>
+  <p>Choose a category. We will filter the products based on your chosen selection.</p>
+	
+  <input type ="checkbox" class = "dietSelect" id = "lactoseIntolerant" name = "lactoseIntolerant" value ="lactoseIntolerant" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label class = "lactoseIntolerant" for="lactoseIntolerant"> Lactose intolerant</label>
+  
+  <input type ="checkbox" class = "dietSelect" id = "nutFree" name = "nutFree" value ="nutFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label class = "nutFree" for="nutFree"> Nut free</label>
+
+    <input type ="checkbox" class = "dietSelect" id = "organic" name = "organic" value ="organic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label class = "organic" for="organic"> Organic</label>
+
+    <input type ="checkbox" class = "dietSelect" id = "healthy" name = "healthy" value ="healthy" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label class = "healthy" for="healthy"> Healthy options</label>
+
+    <input type ="checkbox" class = "dietSelect" id = "weightLoss" name = "weightLoss" value ="weightLoss" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label class = "weightLoss" for="weightLoss"> Good for weight loss</label>
+
+  <br>
+  <br>
+  <br>
+  <br>
+    <button id="GetStarted" onclick="openInfo(event, 'Products')">Look through list of products</button>
+  </div>
+  
+</div>
+
+<div id="Products" class="tabcontent">
+  <br>
+  <br>
+  <div id = "product" class = "Box">
+    <h1 style = "text-align: left;">Step 2</h1>
+    <h3>Products</h3>
+  <p>We filtered the products based on your restrictions.</p>
+	 Choose items to buy:
+   <br>
+   <br>
+	 <div id="displayProduct"></div>
+   <br>
+   <div style = "text-align: right;">
+     <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart
+	</button>
+   </div>
+	 
+   <div style = "text-align: left; position: relative;">
+    <button id="addCart" style = "background-color: white; position: absolute;" onclick="openInfo(event, 'Client')"> <- Go back to Client information</button>
+  </div>
+  <br>
+  <div style = "text-align: right;">
+  <button id="addCart" style = "background-color: white;" onclick="openInfo(event, 'Cart')">Go to My Cart -></button>
+  </div>
+  
+  </div>
+  
+</div>
+
+<div id="Cart" class="tabcontent">
+  <br>
+  <br>
+  <div id = "product" class = "Box">
+    <h1 style = "text-align: left;">Step 3</h1>
+      <h3>Cart</h3>
+        <p>Here is your cart.</p>
+        <div id="displayCart"></div>
+      <br>
+        <div style = "text-align: left; position: relative;">
+          <button id="addCart" style = "background-color: white; position: absolute;" onclick="openInfo(event, 'Products')"> <- Go back to the list of Products</button>
+        </div>
+        <br>
+        <div style = "text-align: right;">
+        <button id="addCart" style = "background-color: white;" onclick="openInfo(event, 'Cart')">Checkout -></button>
+        </div>
+      </div>
+
+  </div>
+  
+  <p id="signature">Website designed by AC</p>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+</div>
+
+
+
+</body>
+
+</html>
