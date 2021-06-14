@@ -1,0 +1,408 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Chouk Physiotherapy</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/logo.png" width="130" height="130">Chouk Physiotherapy Clinic</h1>
+    </nav>
+    <br>
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> About us</h1>
+        <p class="p-4 my-3" style="font-size: 25px">Welcome to Chouk Physiotherapy Clinic! We are a small Physiotherapy clinic located in Ottawa, Ontario.</p>
+        <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers. Our physiotherapists will assess and treat your injury for a very affordable price. Our focus is to be a clinic that provides the best treatment in the Ottawa area. <br><br> Come visit us at our location:</p>
+        <br>
+        <h3 style="padding-left: 1.5rem">Our address:</h3>
+        <p style="padding-left: 1.5rem">1201 Bank Street <br> Ottawa, ON K1S 3X7 <br><br></p>
+        <h3 style="padding-left: 1.5rem">Hours of operation:</h3>
+        <p style="padding-left: 1.5rem">Monday - Friday: 8:00 AM to 5:00 PM <br> Saturday - Sunday: 9:00 AM to 3:00 PM</p>
+        
+    </div>
+
+    <br>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Service</h2></th>
+                <th scope="col"><h2>Description</h2></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style = "font-weight: bold;">Massage Therapy</td>
+                <td>The hands-on manipulation of the soft tissues of the body with the purpose of optimizing health. These are the connective tissue, joints, tendons, muscles, and ligaments. </td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Book an appointment
+                    </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Acupuncture</td>
+                <td>The insertion of very thin needles through the skin at strategic points on the body.</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Book an appointment
+                    </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Aqua Therapy</td>
+                <td>Treatment and exercises that takes place in water for relaxation, fitness or physical rehabilitation.</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Book an appointment
+                    </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Yoga Therapy</td>
+                <td>Therapy that uses yoga postures, breathing exercises, meditation, and guided imagery to improve mental and physical health.</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Book an appointment
+                    </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Vestibular Rehab</td>
+                <td>Treatment involving specific exercises to improve balance function, decrease dizziness/vertigo symptoms, and increase general activity levels.</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        Book an appointment
+                    </button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Massage Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Book an appointment by entering your information here:
+                    <br><br>
+                    <form>
+                        <div class="form-group">
+                            <label for="input-name">First name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your first name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Last name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your last name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Email</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="input-name">Phone number</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="input-date-time">Date and time</label>
+                            <input class="form-control" type="datetime-local" value="2021-01-01T12:00:00" id="input-date-time">
+                        </div>    
+                        
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Acupuncture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Book an appointment by entering your information here:
+                    <br><br>
+                    <form>
+                        <div class="form-group">
+                            <label for="input-name">First name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your first name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Last name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your last name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Email</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="input-name">Phone number</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="input-date-time">Date and time</label>
+                            <input class="form-control" type="datetime-local" value="2021-01-01T12:00:00" id="input-date-time">
+                        </div>    
+                        
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Aqua Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Book an appointment by entering your information here:
+                    <br><br>
+                    <form>
+                        <div class="form-group">
+                            <label for="input-name">First name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your first name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Last name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your last name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Email</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="input-name">Phone number</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="input-date-time">Date and time</label>
+                            <input class="form-control" type="datetime-local" value="2021-01-01T12:00:00" id="input-date-time">
+                        </div>    
+                        
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Yoga Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Book an appointment by entering your information here:
+                    <br><br>
+                    <form>
+                        <div class="form-group">
+                            <label for="input-name">First name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your first name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Last name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your last name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Email</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="input-name">Phone number</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="input-date-time">Date and time</label>
+                            <input class="form-control" type="datetime-local" value="2021-01-01T12:00:00" id="input-date-time">
+                        </div>    
+                        
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel4">Vestibular Rehab</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Book an appointment by entering your information here:
+                    <br><br>
+                    <form>
+                        <div class="form-group">
+                            <label for="input-name">First name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your first name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Last name</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter your last name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="input-name">Email</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <label for="input-name">Phone number</label>
+                            <input type="name" class="form-control" id="input-name" placeholder="Enter">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="input-date-time">Date and time</label>
+                            <input class="form-control" type="datetime-local" value="2021-01-01T12:00:00" id="input-date-time">
+                        </div>    
+                        
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <h1>Meet the Physicaltherapists!</h1>
+    <br>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Marie Smith</p>
+                <p class="card-text">Marie has 15 years of experience in physiotherapy. She is dedicated in providing the best treatment. Marie specializes in Aqua and Yoga Therapy.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Hannah Johnson</p>
+                <p class="card-text">With 20 years of experience in physiotherapy, Hannah is dedicated in helping others recover. Marie specializes in Acupuncture.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Spencer Collings</p>
+                <p class="card-text">Spencer has 10 years of experience in physiotherapy. He is very passionate with what he does and loves helping others. Spencer specializes in Massage Therapy.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Mark Watford</p>
+                <p class="card-text">With 17 years of experience in physiotherapy, Mark loves to help others and he is dedicated to provide the best treatment. Mark specializes in Vestibular Rehab.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+<p id="signature" style = "text-align: right;">Website designed by AC</p>
+
+</html>
