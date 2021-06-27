@@ -1,0 +1,250 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/flick/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
+    
+    <!-- Your own additional style sheet -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <title>Chouk Physiotherapy</title>
+</head>
+<body>
+
+<!-- Using the collapsible Navbar, so we see the hamburger menu icon -->
+<!-- It really has become a standard. -->
+<!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
+<!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
+<!-- be sections in your page. -->
+<nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+
+    <a class="navbar-brand" href="#"><img src="images/logo.png" width="40" height="40" style="margin-left: 10px; margin-right: 7px;">Chouk Physiotherapy Clinic</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutus"><img src="images/aboutusicon.png" alt="logo" style="width:30px; margin-right: 7px;">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services"><img src="images/servicesicon.png" alt="logo" style="width:30px; margin-right: 7px;">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#physiotherapists"><img src="images/meetteamicon.png" alt="logo" style="width:30px; margin-right: 7px;">Physiotherapists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#bookappointment"><img src="images/bookappointmenticon.png" alt="logo" style="width:30px; margin-right: 7px;">Book an appointment</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    
+    <br>
+    <br>
+    <br>
+    <h1 class="" id="aboutus"> <img src="images/aboutusicongrey.png" alt="logo" style="margin-right: 7px;"> About us</h1>
+    <div class=" p-3 my-3 border bg-light">
+        <p style="font-size: 25px; padding-left: 1.5rem">Welcome to Chouk Physiotherapy Clinic! We are a small Physiotherapy clinic located in Ottawa, Ontario.</p>
+        <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers. Our physiotherapists will assess and treat your injury for a very affordable price. Our focus is to be a clinic that provides the best treatment in the Ottawa area. <br><br> Come visit us at our location:</p>
+        <br>
+        <h3 style="padding-left: 1.5rem">Our address:</h3>
+        <p style="padding-left: 1.5rem">1201 Bank Street <br> Ottawa, ON K1S 3X7 <br><br></p>
+        <h3 style="padding-left: 1.5rem">Hours of operation:</h3>
+        <p style="padding-left: 1.5rem">Monday - Friday: 8:00 AM to 5:00 PM <br> Saturday - Sunday: 9:00 AM to 3:00 PM</p>
+        
+    </div>
+
+    <br>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+
+    <h1 id="services"> <img src="images/servicesicongrey.png" alt="logo" style="margin-right: 7px;">Services</h1>
+    <br>
+
+    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Service</h2></th>
+                <th scope="col"><h2>Description</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style = "font-weight: bold;">Massage Therapy</td>
+                <td>The hands-on manipulation of the soft tissues of the body with the purpose of optimizing health. These are the connective tissue, joints, tendons, muscles, and ligaments. </td>
+
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Acupuncture</td>
+                <td>The insertion of very thin needles through the skin at strategic points on the body.</td>
+
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Aqua Therapy</td>
+                <td>Treatment and exercises that takes place in water for relaxation, fitness or physical rehabilitation.</td>
+
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Yoga Therapy</td>
+                <td>Therapy that uses yoga postures, breathing exercises, meditation, and guided imagery to improve mental and physical health.</td>
+
+            </tr>
+            <tr>
+                <td style = "font-weight: bold;">Vestibular Rehab</td>
+                <td>Treatment involving specific exercises to improve balance function, decrease dizziness/vertigo symptoms, and increase general activity levels.</td>
+
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <h1 id="physiotherapists"><img src="images/meetteamicongrey.png" alt="logo" style="margin-right: 7px;">Meet the Physiotherapists!</h1>
+    <br>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Marie Smith</p>
+                <p class="card-text">Marie has 15 years of experience in physiotherapy. She is dedicated in providing the best treatment. Marie specializes in Aqua and Yoga Therapy. Available Tuesdays and Thursdays.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Hannah Johnson</p>
+                <p class="card-text">With 20 years of experience in physiotherapy, Hannah is dedicated in helping others recover. Marie specializes in Acupuncture. Available Mondays, Wednesdays and Fridays.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Spencer Collings</p>
+                <p class="card-text">Spencer has 10 years of experience in physiotherapy. He is very passionate with what he does and loves helping others. Spencer specializes in Massage Therapy. Available Tuesdays, Wednesdays and Thursdays.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/physiotherapist4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text" style = "font-weight: bold;">Mark Watford</p>
+                <p class="card-text">With 17 years of experience in physiotherapy, Mark loves to help others and he is dedicated to provide the best treatment. Mark specializes in Vestibular Rehab. Available Mondays, Tuesdays and Friday.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 id="bookappointment"><img src="images/bookappointmenticongrey.png" alt="logo" style="margin-right: 7px;">Book an appointment</h1>
+    <br>
+    <div class=" p-3 my-3 border bg-light">
+        <div class="">
+            <div id="errormessage"></div>
+            Book an appointment by entering your information here:
+            <br><br>
+            <form>
+                <label for="input-name">Select a service </label>
+                <div class="form-group">
+                    <select class="form-select">
+                        <option selected>Select a service</option>
+                        <option value="1">Massage Therapy</option>
+                        <option value="2">Acupuncture</option>
+                        <option value="3">Aqua Therapy</option>
+                        <option value="4">Yoga Therapy</option>
+                        <option value="5">Vestibular Rehab</option>
+                      </select>
+                </div>
+                <br>
+                <label for="input-name">Select a physiotherapist </label>
+                <div class="form-group">
+                    <select class="form-select" id="therapist">
+                        <option selected value="default">Select a physiotherapist</option>
+                        <option value="Marie Smith">Marie Smith</option>
+                        <option value="Hannah Johnson">Hannah Johnson</option>
+                        <option value="Spencer Collings">Spencer Collings</option>
+                        <option value="Mark Watford">Mark Watford</option>
+                      </select>
+                </div>
+                <br>
+                <label for="input-name">First name </label> <br> <input class="form-control" type="text" id="firstname" title="Enter your first name.">
+                <br>
+                <label for="input-name">Last name </label><br> <input class="form-control" type="text" id="lastname" title="Enter your last name.">
+                <br>
+                <label for="input-name">Email </label><br> <input class="form-control" type="text" id="email" title="Enter your email.">
+                <br>
+                <label for="input-name">Phone number </label><br> <input class="form-control" placeholder="555-555-555" type="text" id="phone" title="Enter your phone number.">
+                <br>
+                <label for="input-name">Date </label><br><input class="form-control" type="text" id="dateInput" title="Select an available date for your appointment.">
+                <br>
+                <div class="form-group">
+                    <label for="input-time">Time</label>
+                    <input class="form-control datetime-inner" type="time" value="T12:00:00" id="input-time" title = "Select a time for your appointment. Click the clock on the right to change the the time." style="width: 100%;">
+                </div> 
+                <br>
+                <br>
+                <h2><img src="images/paymenticongrey.png" alt="logo" style="margin-right: 7px;">Payment</h2>
+                <br>
+                <label for="input-name">Credit card number </label><br><input class="form-control" type="text" id="debit" title="Your credit card is used to reserve a time. We ask for your credit card number in case of a last minute cancellation. The cancellation fee is $30.">
+                <br>
+                <label for="input-name">CVV </label><br> <input class="form-control" type="text" id="cvv" title="Enter your CVV code. The 3 numbers on the back of your card.">
+                <br>
+                <label for="input-name">Name on card </label><br> <input class="form-control" type="text" id="nameoncard" title="Enter the name that appears on your card.">
+              </form>
+
+              <br>
+              <div class="footer">
+                <button type="button" class="btn btn-primary" id="pay">Pay now</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+<br>
+
+<p id="signature" style = "text-align: right;">Website designed by AC</p>
+
+</html>

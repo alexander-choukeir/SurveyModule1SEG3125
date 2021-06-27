@@ -1,0 +1,22 @@
+html {
+    scroll-padding-top: 75px;
+}
+
+td{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.error {
+    background-color: #F8D7DA;
+}
+
+.showInput {
+    border-color: #8DBAFB;
+}
