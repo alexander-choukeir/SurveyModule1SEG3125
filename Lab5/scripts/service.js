@@ -93,6 +93,7 @@ $(document).ready(function(){
     
 
     let listoferrors = [];
+    let listofsuccess = [];
     $("#phone").on("change", function(){
         if (!validatePhone("phone")){
             $("#phone").val("Wrong format for phone");
@@ -101,6 +102,7 @@ $(document).ready(function(){
         }
         else {
             $("#phone").removeClass("error");
+            listofsuccess.push("Success");
         }
     });
 
@@ -112,6 +114,7 @@ $(document).ready(function(){
         }
         else {
             $("#email").removeClass("error");
+            listofsuccess.push("Success");
         }
     });
 
@@ -123,6 +126,7 @@ $(document).ready(function(){
         }
         else {
             $("#debit").removeClass("error");
+            listofsuccess.push("Success");
         }
     });
 
@@ -130,18 +134,32 @@ $(document).ready(function(){
     let errormsg = document.getElementById("errormessage");
     
     errormsg.innerHTML = "";
-    console.log(listoferrors);
+
+    let successmsg = document.getElementById("successfulmessage");
+    
+    successmsg.innerHTML = "";
     $("#pay").click(function(){
-        errormsg.className = "alert alert-danger"
-        let err = document.createElement("h3");
-        err.innerHTML = "There is an error with your entries:"
-        errormsg.appendChild(err);
-        for (var i = 0; i <listoferrors.length; i++) {
-            let msg = document.createElement("p");
-            msg.innerHTML = listoferrors[i];
-            errormsg.appendChild(msg);
+
+        if (listoferrors.length > 0) {
+            successmsg.innerHTML = "";
+            successmsg.className = "";
+            errormsg.className = "alert alert-danger";
+            for (var i = 0; i <listoferrors.length; i++) {
+                let msg = document.createElement("p");
+                msg.innerHTML = listoferrors[i];
+                errormsg.appendChild(msg);
+            }
+        } else if (listofsuccess.length > 0){
+            errormsg.innerHTML = "";
+            errormsg.className = "";
+            successmsg.className = "alert alert-success"
+            let a = document.createElement("p");
+            a.innerHTML = "Sucessful! Your appointment is now booked."
+            successmsg.appendChild(a);
         }
         
+        listoferrors = [];
+        listofsuccess = [];
     })
 
     // To change the style of the calender, look in jqueryui.com, under Themes, in the ThemeRoller Gallery
