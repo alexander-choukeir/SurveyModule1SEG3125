@@ -154,7 +154,7 @@ $(document).ready(function(){
             errormsg.className = "";
             successmsg.className = "alert alert-success"
             let a = document.createElement("p");
-            a.innerHTML = "Sucessful! Your appointment is now booked."
+            a.innerHTML = "Sucessful! Your appointment is now booked. A confirmation has been sent to your email."
             successmsg.appendChild(a);
         }
         
