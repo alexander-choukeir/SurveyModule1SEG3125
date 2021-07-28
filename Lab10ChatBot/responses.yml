@@ -1,0 +1,59 @@
+responses:
+   utter_greet: # Greet user
+        - text: |
+            Hello! How can I help you?
+        - text: |
+            Hi!
+   utter_ask_email: # Ask for email
+        - text: |
+            What is your email address?
+   utter_subscribed: # Telling user they are now subscribed
+        - text: |
+            Check your inbox at {email} in order to finish subscribing to the newsletter!
+        - text: |
+            You're all set! Check your inbox at {email} to confirm your subscription.
+   utter_unsubscribed: # Unsubscribed response
+        - text: |
+            Okay, no problem, you will no longer be subscribed to our newsletter.
+        - text: |
+            Alright! You will no longer receive our newsletter. If you change your mind we will certainly help you out!
+        - text: |
+            Sounds good! We have removed you from our subscription list.
+        - text: |
+            You will no longer receive any more emails. Let us know if you would like to resubscribe!
+  utter_reason: # Ask for reason
+        - text: |
+            Why do you want to unsubscribe?
+        - text: |
+            If you don't mind, what was the reasoning for unsubscribing?
+        - text: |
+            To help improve our newsletter, could you tell us why you are unsubscribing?
+        - text: |
+            What is the reason for unsubscribing?
+  utter_understand: # Understand reason, answer with empathy
+        - text: |
+            Not a problem. Let us know if you change your mind.
+        - text: |
+            We understand. We hope you will return!
+        - text: |
+            Okay. You will no longer be subscribed to our newsletter.
+        - text: |
+            All good. We will end your subscription to our newsletter.
+  utter_thanks: # Thank you response
+        - text: |
+            Glad to help.
+        - text: |
+            No problem.
+        - text: |
+            You're welcome.
+        - text: |
+            Thanks. 
+  utter_goodbye: # Goodbye response
+        - text: |
+            Bye!
+        - text: |
+            Goodbye!
+        - text: |
+            Take care. Have a great day!
+        - text: |
+            Bye bye!   
